@@ -37,15 +37,7 @@ triggers {
                         }
         }
     }
- 	stage('Example Deploy') {
-            when {
-                branch 'main'
-            }
-            steps {
-                echo 'current branch'
-            }
-        }
-    post {
+ 	    post {
             always {
                 echo 'I will always say Hello again!'
             }

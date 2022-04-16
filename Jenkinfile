@@ -1,11 +1,16 @@
 pipeline {
     agent any
 
+ environment {
+        CC = 'google.com'
+    }
+
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
                 echo 'Manoj..'
+                echo $CC
             }
         }
         stage('Test') {

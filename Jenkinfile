@@ -4,11 +4,8 @@ pipeline {
  environment {
         CC = "google.com"
     }
-	parameters {
-	 string(name: 'PERSON',
-	 defaultValue: 'Parameter 1',
-	 description: 'We are doing good job')
-	 }
+	string(name: 'PERSON', defaultValue: 'Mr Jenkins', description: 'Who should I say hello to?')
+
 
     stages {
         stage('Build') {

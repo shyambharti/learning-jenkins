@@ -41,13 +41,13 @@ pipeline {
                         }
                         stage('In Parallel 3') {
                              steps {
-                             	echo "In Parallel 2"
+                             	echo "In Parallel 3"
                              }
                         }
-                        stage('In Parallel 3') {
-                               steps {
-                                 echo "In Parallel 2"
-                                }
+                        stage('In Parallel 4') {
+                             steps {
+                                echo "In Parallel 4"
+                             }
                         }
                     }
                 }

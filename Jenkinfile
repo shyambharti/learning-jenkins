@@ -2,14 +2,15 @@ pipeline {
     agent any
 
  environment {
-        CC = 'google.com'
+        CC = "google.com"
     }
 
     stages {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh 'echo url=${CC}'
+                url=${CC}
+                sh 'echo url'
             }
         }
         stage('Test') {

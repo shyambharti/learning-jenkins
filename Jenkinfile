@@ -5,8 +5,8 @@ pipeline {
         CC = "google.com"
     }
 	parameters {
-	 string(name: 'DEPLOY_ENV',
-	 defaultValue: 'staging',
+	 string(name: 'PERSON',
+	 defaultValue: 'Parameter 1',
 	 description: 'We are doing good job')
 	 }
 
@@ -15,6 +15,7 @@ pipeline {
             steps {
                 echo 'Building..'
                 sh 'echo url=${CC}'
+                echo "hello ${params.PERSON}"
             }
         }
         stage('Test') {

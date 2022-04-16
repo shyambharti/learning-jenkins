@@ -4,6 +4,11 @@ pipeline {
  environment {
         CC = "google.com"
     }
+	parameters {
+	 string(name: 'DEPLOY_ENV',
+	 defaultValue: 'staging',
+	 description: 'We are doing good job')
+	 }
 
     stages {
         stage('Build') {

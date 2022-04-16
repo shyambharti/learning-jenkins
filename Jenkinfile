@@ -2,21 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello Manoj and Tapas') {
+        stage('stage-1') {
             steps {
                 echo 'Hello World'
-                echo "${date}"
             }
         }
-    }
-}
-pipeline {
-    agent any
-    stages {
-        stage('Example') {
-            steps {
-                echo {date}
-            }
-        }
+        stage('stage-2') {
+                    steps {
+                        echo 'Hello India'
+                    }
+                }
     }
 }

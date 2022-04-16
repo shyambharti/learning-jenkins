@@ -9,8 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                url=${CC}
-                sh 'echo url'
+                sh 'echo url=${CC}'
             }
         }
         stage('Test') {

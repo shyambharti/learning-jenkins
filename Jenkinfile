@@ -9,7 +9,7 @@ pipeline {
         }
         stage('stage-2') {
                     steps {
-                        echo 'Hello India'
+                        echo www.google.com
                     }
                 }
     }

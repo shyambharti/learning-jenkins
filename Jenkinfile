@@ -5,10 +5,8 @@ pipeline {
         stage('Hello Manoj and Tapas') {
             steps {
                 echo 'Hello World'
+                echo "${date}"
             }
-            steps {
-                           echo "${date}"
-                   }
         }
     }
 }

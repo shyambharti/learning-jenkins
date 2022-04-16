@@ -1,7 +1,7 @@
 pipeline {
     agent none
     stages {
-        stage('Non-Sequential Stage') {
+        stage('workstation') {
             agent {
                 label 'for-non-sequential'
             }
